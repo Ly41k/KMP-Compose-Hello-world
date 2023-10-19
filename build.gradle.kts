@@ -12,6 +12,8 @@ plugins {
     alias(libs.plugins.kotlinCocoapods).apply(false)
     @Suppress("DSL_SCOPE_VIOLATION")
     alias(libs.plugins.jetbrainsCompose).apply(false)
+    @Suppress("DSL_SCOPE_VIOLATION")
+    alias(libs.plugins.resourcesMultiplatform).apply(false)
 }
 
 tasks.register("clean", Delete::class) {
