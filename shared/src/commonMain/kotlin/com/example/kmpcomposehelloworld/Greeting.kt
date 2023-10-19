@@ -4,6 +4,7 @@ class Greeting {
     private val platform: Platform = getPlatform()
 
     fun greet(): String {
-        return "Hello, ${platform.name}!"
+        val hello = MainRes.string.hello_word
+        return "$hello,\n${platform.name}!"
     }
 }
